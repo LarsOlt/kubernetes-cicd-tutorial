@@ -31,6 +31,7 @@ jobs:
           tags: |
             ghcr.io/${{ env.REPO }}:latest
             ghcr.io/${{ env.REPO }}:${{ github.sha }}
+            linux/arm64
 
       - name: Update GitOps repository
         shell: bash
