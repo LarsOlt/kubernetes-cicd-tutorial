@@ -31,8 +31,7 @@ jobs:
           tags: |
             ghcr.io/${{ env.REPO }}:latest
             ghcr.io/${{ env.REPO }}:${{ github.sha }}
-      - name: Dump GitHub context
-        run: echo '${{ toJson(github) }}'
+
       - name: Update GitOps repository
         shell: bash
         env:
