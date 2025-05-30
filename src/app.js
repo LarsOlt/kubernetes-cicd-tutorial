@@ -8,6 +8,7 @@ app.use(cors());
 
 let grades = [];
 
+// test
 app.get('/', (req, res) => {
   console.log('Received GET request for /');
   res.json({message:"Hello World!"});
